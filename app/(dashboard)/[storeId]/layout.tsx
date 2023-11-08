@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import prismadb from "@/lib/primsadb";
 import { auth } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
@@ -22,7 +23,7 @@ async function DashBoardLayout({
   if (!store) redirect("/");
   return (
     <>
-      <div>This is Navbar</div>
+      <Navbar />
       {children}
     </>
   );

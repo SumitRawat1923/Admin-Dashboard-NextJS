@@ -19,7 +19,7 @@ import axios from "axios";
 import { toast } from "react-hot-toast";
 
 const formSchema = z.object({
-  name: z.string().min(3),
+  name: z.string().min(4),
 });
 
 type TformSchema = z.infer<typeof formSchema>;
